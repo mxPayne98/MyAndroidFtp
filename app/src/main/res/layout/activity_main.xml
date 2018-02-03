@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/instructionback_short"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTintMode="multiply"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        tools:context="com.ddinc.ftpnow.MainActivity">
+
+        <ImageButton
+            android:id="@+id/bthost"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/host" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="HOST"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#c2c2c2" />
+
+        <ImageButton
+            android:id="@+id/btconnect"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="20dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/connect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="CONNECT"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#c2c2c2" />
+
+        <ImageButton
+            android:id="@+id/btFileExp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/folder_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="EXPLORE"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#c2c2c2" />
+
+
+    </LinearLayout>
+
+</ScrollView>

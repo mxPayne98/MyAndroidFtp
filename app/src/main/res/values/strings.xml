@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">FTP Now</string>
+    <string name="welcome">WELCOME</string>
+    <string name="title_activity_navigate">Navigate</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_start_server">Start</string>
+    <string name="action_stop_server">Stop</string>
+    <string name="text_view_user_list">Server list</string>
+    <string name="text_view_user_name">Username</string>
+    <string name="text_view_password">Password</string>
+    <string name="text_view_upload_rate">Upload rate</string>
+    <string name="text_view_download_rate">Download rate</string>
+    <string name="text_view_default_path">Default directory</string>
+    <string name="text_view_user_enabled_true">Enabled</string>
+    <string name="text_view_user_enabled_false">Disabled</string>
+    <string name="text_view_write_permission_true">Read/Write</string>
+    <string name="text_view_write_permission_false">Read only</string>
+    <string name="checkbox_write_permission">Write permission</string>
+    <string name="checkbox_user_enabled">User enabled</string>
+    <string name="button_save">Save</string>
+    <string name="start_up_prompt">Do not forget to click the start button above!</string>
+    <string name="same_name_warning">Duplicate user name, no modification!</string>
+    <string name="menu_edit_user">Modify</string>
+    <string name="menu_delete_user">Delete</string>
+    <string name="alert_delete_user">Confirm to delete this user?</string>
+
+    <string name="prefs_category_advanced_server_settings">Settings</string>
+    <string name="prefs_category_advanced_server_settings_summary">Contains server common parameters</string>
+
+
+    <string name="prefs_port">Server port</string>
+    <string name="prefs_port_key">key_port</string>
+    <integer name="prefs_port_default">2221</integer>
+
+    <string name="prefs_max_login_number">Max users landing</string>
+    <string name="prefs_max_login_number_key">key_max_login_number</string>
+    <integer name="prefs_max_login_number_default">0</integer>
+
+    <string name="prefs_max_login_per_ip">Single IP maximum number of users</string>
+    <string name="prefs_max_login_per_ip_key">key_max_login_per_ip</string>
+    <integer name="prefs_max_login_per_ip_default">0</integer>
+
+    <string name="prefs_category_others">Other</string>
+    <string name="prefs_category_others_summary">Other options</string>
+
+    <string name="prefs_manual">Instructions for use</string>
+    <string name="prefs_text_view_manual">
+        The general order of use is as follows: \n \n
+        1 Make sure the phone is on the same network as another device that needs to access the phone. \n \n
+        2 Create a new user through the plus sign in the lower right corner of the software. (Optional) \n \n
+        3 Adjust the users configuration information, such as the default directory, the maximum upload / download rate. (Optional) \n \n
+        4 Click on the start icon at the top of the app to start the server. \n \n
+        At this point, you can access the files on this phone through any device on the same network. \n \n
+        Note: After changing user and server configuration information, you need to stop and restart the server to take effect.
+    </string>
+    <string name="prefs_first_run_key">first_run_key</string>
+
+
+    <string name="prefs_about">About</string>
+    <string name="prefs_text_view_about">This application implements a custom FTP server that allows wireless
+        connections between the mobile and any other device on the same network to wirelessly transfer files.
+        \n \n Author : Bhavya Chawla</string>
+</resources>

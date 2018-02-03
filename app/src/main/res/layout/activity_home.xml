@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/instructionback"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTintMode="multiply"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.ddinc.ftpnow.HomeActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:src="@drawable/file_access_icon_file_transfer_and_ftp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="Share files - anytime - anywhere"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

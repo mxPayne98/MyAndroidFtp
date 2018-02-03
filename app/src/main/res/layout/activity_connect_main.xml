@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/instructionback_short"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTintMode="multiply"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/edtHostName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:hint="FTP Address"
+            android:textColor="#ffffff"
+            android:textColorHint="#8e8e8e">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:hint="Port"
+            android:textColor="#ffffff"
+            android:textColorHint="#8e8e8e" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:ems="10"
+                android:hint="User Name"
+                android:textColor="#ffffff"
+                android:textColorHint="#8e8e8e" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#8e8e8e" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnLoginFtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btnUploadFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload " />
+
+        <Button
+            android:id="@+id/btnDownloadFtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download" />
+
+        <Button
+            android:id="@+id/btnDisconnectFtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnect" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

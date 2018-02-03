@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/instructionback_short"
+    android:backgroundTint="#28504d"
+    android:backgroundTintMode="multiply"
+    android:gravity="center"
+    android:minWidth="200dp"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="10dp"
+        android:text="EDIT USER"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/text_view_user_name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#bcbcbc"
+            android:maxLength="16"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/text_view_password"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#bcbcbc"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/text_view_upload_rate"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit_upload_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#bcbcbc"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/text_view_download_rate"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit_download_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#bcbcbc"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="/"
+            android:text="@string/text_view_default_path"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/edit_default_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#bcbcbc"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_write_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#bcbcbc"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/checkbox_write_permission"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/checkbox_user_enabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#bcbcbc"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/checkbox_user_enabled"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/button_save"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+</LinearLayout>

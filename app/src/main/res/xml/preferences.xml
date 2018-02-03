@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="prefs_category_advanced_server_settings_summary"
+        android:title="@string/prefs_category_advanced_server_settings">
+        <EditTextPreference
+            android:defaultValue="@integer/prefs_port_default"
+            android:key="@string/prefs_port_key"
+            android:maxLength="5"
+            android:numeric="decimal"
+            android:title="@string/prefs_port" />
+        <EditTextPreference
+            android:defaultValue="@integer/prefs_max_login_number_default"
+            android:key="@string/prefs_max_login_number_key"
+            android:maxLength="2"
+            android:numeric="decimal"
+            android:title="@string/prefs_max_login_number" />
+        <EditTextPreference
+            android:defaultValue="@integer/prefs_max_login_per_ip_default"
+            android:key="@string/prefs_max_login_per_ip_key"
+            android:maxLength="2"
+            android:numeric="decimal"
+            android:title="@string/prefs_max_login_per_ip" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/prefs_category_others_summary"
+        android:title="@string/prefs_category_others">
+        <PreferenceScreen android:title="@string/prefs_manual">
+            <intent android:action="gdcrry.ftpserver.activities.ManualActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/prefs_about">
+            <intent android:action="gdcrry.ftpserver.activities.AboutActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

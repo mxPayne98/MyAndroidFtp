@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bcbcbc"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="host.MainActivityFragment"
+    tools:showIn="@layout/activity_host_main">
+
+    <TextView
+        android:id="@+id/text_view_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:hint="ftp://192.168.1.123"
+        android:padding="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="10dp"
+        android:text="@string/text_view_user_list"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/recycler_view_item_card_view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Access server by typing the address given on top in your browser or file explorer."
+        android:textColor="#636363"
+        android:textSize="14sp" />
+
+</LinearLayout>
