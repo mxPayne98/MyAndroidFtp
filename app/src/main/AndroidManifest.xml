@@ -46,7 +46,8 @@
             android:name=".host.SettingsActivity"
             android:label="@string/action_settings"
             android:theme="@style/AppTheme.SettingsWithActionbar" />
-        <activity android:name=".connect.ConnectMainActivity"></activity>
+        <activity android:name=".connect.ConnectMainActivity" />
+        <activity android:name=".explore.FilerExplorer"></activity>
     </application>
 
 </manifest>
