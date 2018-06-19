@@ -3,9 +3,7 @@
     android:id="@+id/linearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/instructionback_short"
-    android:backgroundTint="@color/colorPrimaryDark"
-    android:backgroundTintMode="multiply"
+    android:background="@drawable/backftp"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp">

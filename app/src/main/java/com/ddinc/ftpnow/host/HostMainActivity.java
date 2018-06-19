@@ -314,12 +314,12 @@ public class HostMainActivity extends AppCompatActivity {
 
     //Modify the prompt text above the App
     private void setPromptText() {
-        TextView tvPrompt = (TextView) findViewById(R.id.text_view_prompt);
+        TextView tvPrompt = findViewById(R.id.text_view_prompt);
         WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         int ipAddress = wifiInfo.getIpAddress();
         String ip = (ipAddress & 0xff) + "." + ((ipAddress >> 8) & 0xff) + "." + ((ipAddress >> 16) & 0xff) + "." + ((ipAddress >> 24) & 0xff);
-        String promptInfo = "ftp://" + ip + ":" + sharedPreferences.getString(getString(R.string.prefs_port_key), "2221") + "\n";
+        String promptInfo = "ftp://" + ip + ":" + sharedPreferences.getString(getString(R.string.prefs_port_key), "2221");
         tvPrompt.setText(promptInfo);
     }
 
@@ -327,7 +327,6 @@ public class HostMainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         setPromptText();
         serverData.maxLoginNumber = Integer.parseInt(sharedPreferences.getString(getString(R.string.prefs_max_login_number_key), "0"));
         serverData.maxLoginPerIp =
