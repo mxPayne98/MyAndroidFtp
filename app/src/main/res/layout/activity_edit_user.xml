@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -15,141 +16,176 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily=""
         android:padding="10dp"
-        android:text="EDIT USER"
+        android:text="Edit User"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textColor="#ffffff" />
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/text_view_user_name"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="#ffffff" />
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp">
 
-        <EditText
-            android:id="@+id/edit_user_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#bcbcbc"
-            android:maxLength="16"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/text_view_user_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#bcbcbc"
+                android:maxLength="16" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/text_view_password"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="#ffffff" />
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp">
 
-        <EditText
-            android:id="@+id/edit_password"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#bcbcbc"
-            android:inputType="textPassword"
-            android:maxLength="16"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/text_view_password"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#bcbcbc"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/text_view_upload_rate"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="#ffffff" />
-
-        <EditText
-            android:id="@+id/edit_upload_rate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
             android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#bcbcbc"
-            android:inputType="number"
-            android:maxLength="10"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/text_view_upload_rate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/edit_upload_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#bcbcbc"
+                android:inputType="number"
+                android:maxLength="10" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="@string/text_view_download_rate"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="#ffffff" />
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp">
 
-        <EditText
-            android:id="@+id/edit_download_rate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#bcbcbc"
-            android:inputType="number"
-            android:maxLength="10"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/text_view_download_rate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
-    <LinearLayout
+            <EditText
+                android:id="@+id/edit_download_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#bcbcbc"
+                android:inputType="number"
+                android:maxLength="10" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:hint="/"
-            android:text="@string/text_view_default_path"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="#ffffff" />
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp">
 
-        <EditText
-            android:id="@+id/edit_default_path"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#bcbcbc"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="/"
+                android:text="@string/text_view_default_path"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/edit_default_path"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#bcbcbc" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
     <CheckBox
         android:id="@+id/checkbox_write_permission"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:buttonTint="#bcbcbc"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="sans-serif"
         android:text="@string/checkbox_write_permission"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
         android:textColor="#ffffff" />
@@ -159,18 +195,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:buttonTint="#bcbcbc"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="sans-serif"
         android:text="@string/checkbox_user_enabled"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
         android:textColor="#ffffff" />
 
-    <Button
-        android:id="@+id/button_save"
-        android:layout_width="200dp"
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/button_save"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+        app:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:text="@string/button_save"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

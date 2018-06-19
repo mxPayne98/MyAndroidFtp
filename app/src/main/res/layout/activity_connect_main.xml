@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,57 +16,89 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-
-        <EditText
-            android:id="@+id/edtHostName"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffffff"
-            android:ems="10"
-            android:hint="FTP Address"
-            android:textColor="#ffffff"
-            android:textColorHint="#8e8e8e">
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
 
-            <requestFocus />
-        </EditText>
+            <EditText
+                android:id="@+id/edtHostName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:ems="10"
+                android:hint="FTP Address"
+                android:textColor="#ffffff"
+                android:textColorHint="#8e8e8e">
 
-        <EditText
-            android:id="@+id/edtPort"
+                <requestFocus />
+            </EditText>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffffff"
-            android:ems="10"
-            android:hint="Port"
-            android:textColor="#ffffff"
-            android:textColorHint="#8e8e8e" />
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/edtPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:ems="10"
+                android:hint="Port"
+                android:textColor="#ffffff"
+                android:textColorHint="#8e8e8e" />
+        </android.support.v7.widget.CardView>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/edtUserName"
-                android:layout_width="wrap_content"
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:backgroundTint="#ffffff"
-                android:ems="10"
-                android:hint="User Name"
-                android:textColor="#ffffff"
-                android:textColorHint="#8e8e8e" />
+                app:cardCornerRadius="10dp">
 
-            <EditText
-                android:id="@+id/edtPassword"
-                android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:ems="10"
+                    android:hint="User Name"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8e8e8e" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:backgroundTint="#ffffff"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textColor="#ffffff"
-                android:textColorHint="#8e8e8e" />
+                app:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8e8e8e" />
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 
@@ -77,36 +110,71 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <Button
-            android:id="@+id/btnLoginFtp"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
 
-        <Button
-            android:id="@+id/btnUploadFile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upload " />
+            <Button
+                android:id="@+id/btnLoginFtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:text="Login" />
 
-        <Button
-            android:id="@+id/btnDownloadFtp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Download" />
+        </android.support.v7.widget.CardView>
 
-        <Button
-            android:id="@+id/btnDisconnectFtp"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Disconnect" />
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/btnUploadFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:text="Upload " />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/btnDownloadFtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="Download" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/btnDisconnectFtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
+                android:text="Disconnect" />
+        </android.support.v7.widget.CardView>
 
         <Button
             android:id="@+id/btnExit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:text="Exit"
             android:visibility="invisible" />
+
     </LinearLayout>
 
 </LinearLayout>

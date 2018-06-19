@@ -9,8 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="sans-serif-smallcaps"
         android:padding="20dp"
         android:text="@string/prefs_text_view_manual"
-        android:textSize="18sp" />
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 </LinearLayout>

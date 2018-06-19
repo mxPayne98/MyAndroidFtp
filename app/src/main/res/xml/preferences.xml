@@ -26,10 +26,10 @@
         android:summary="@string/prefs_category_others_summary"
         android:title="@string/prefs_category_others">
         <PreferenceScreen android:title="@string/prefs_manual">
-            <intent android:action="gdcrry.ftpserver.activities.ManualActivity" />
+            <intent android:action="com.ddinc.ftpnow.host.ManualActivity" />
         </PreferenceScreen>
         <PreferenceScreen android:title="@string/prefs_about">
-            <intent android:action="gdcrry.ftpserver.activities.AboutActivity" />
+            <intent android:action="com.ddinc.ftpnow.host.AboutActivity" />
         </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>
