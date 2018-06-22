@@ -113,7 +113,7 @@ public class ConnectMainActivity extends AppCompatActivity implements View.OnCli
                         true, false);
                 new Thread(new Runnable() {
                     public void run() {
-                        boolean status = false;
+                        boolean status;
                         status = ftpclient.ftpUpload(
                                 Environment.getExternalStorageDirectory()
                                         + "/test/" + TEMP_FILENAME,
