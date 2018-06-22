@@ -44,6 +44,7 @@
         <activity
             android:name=".host.HostMainActivity"
             android:label="@string/app_name"
+            android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
@@ -59,8 +60,12 @@
             android:name=".host.SettingsActivity"
             android:label="@string/action_settings"
             android:theme="@style/AppTheme.SettingsWithActionbar" />
-        <activity android:name=".connect.ConnectMainActivity" />
-        <activity android:name=".explore.FilerExplorer" />
+        <activity
+            android:name=".connect.ConnectMainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".explore.FilerExplorer"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>
